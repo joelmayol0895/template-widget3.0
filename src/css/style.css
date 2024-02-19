@@ -1,14 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 :root {
-  --primary-background: #04194c;
-  --secondary-background: #e9eef9;
-  --light-background:#fff;
+  --primary-template-background: #04194c;
+  --secondary-template-background: #e9eef9;
+  --light-template-background: #fff;
   --accordion-background-active: #2f84ed;
 }
 
 * {
-  font-family: "Roboto", sans-serif;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   image-rendering: -webkit-optimize-contrast;
@@ -16,11 +15,11 @@
 }
 
 body {
-  background-color: var(--secondary-background) !important;
+  background-color: var(--secondary-template-background) !important;
 }
 
-header {
-  background: var(--primary-background);
+.template-header {
+  background: var(--primary-template-background);
   height: 15vh;
   display: flex;
   align-items: end;
@@ -32,12 +31,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: var(--light-template-background);
   align-self: center;
-}
-
-.logo img {
-  width: 56px;
 }
 
 .logo h2 {
@@ -54,7 +49,7 @@ header {
 }
 
 #accordionExample {
-  background: #fff;
+  background: var(--light-template-background);
   position: relative;
   margin: 0 auto 20px;
   border-radius: 7px;
@@ -90,11 +85,11 @@ header {
 
 #accordionExample .accordion-button:not(.collapsed) {
   background: var(--accordion-background-active);
-  color: #fff;
+  color: var(--light-template-background);
 }
 
-footer {
-  background: var(--primary-background);
+.footer-template {
+  background: var(--primary-template-background);
   height: 10vh;
   display: flex;
   align-items: center;
@@ -102,8 +97,8 @@ footer {
   border-top: 1px solid #d9d9df;
 }
 
-footer .footer-logo {
-  color: #fff;
+.footer-template .footer-logo {
+  color: var(--light-template-background);
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -122,7 +117,7 @@ footer .footer-logo {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  border: 2px dashed var(--primary-background);
+  border: 2px dashed var(--primary-template-background);
   margin: 0 clamp(10px, 4vw, 50px) clamp(10px, 4vw, 50px);
   padding: 30px 20px 20px;
   background: #f6f6ff;
@@ -177,7 +172,7 @@ footer .footer-logo {
   justify-content: center;
   flex-flow: column wrap;
   align-items: center;
-  background-color: var(--secondary-background);
+  background-color: var(--secondary-template-background);
   padding: 20px;
   border-radius: 20px;
 }

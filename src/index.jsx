@@ -1,9 +1,10 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
+import { yotpoWidgetsContainer } from "react";
 import "./css/style.css";
 import "bootstrap/dist/js/bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
-import App from './app';
+import App from './App';
 
 window.addEventListener("load", () => {
   setTimeout(() => {
